@@ -1,0 +1,134 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.description {
+  text-align: center;
+}
+
+.page-general {
+  display: grid;
+  grid-template-columns: minmax(auto, 1024px);
+  justify-content: center;
+  align-content: center;
+}
+
+.concept-container {
+  display: grid;
+  border: 1px solid black;
+  padding-left: 2px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50px 50px 50px;
+
+  align-items: center;
+}
+
+.atributos-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50px 50px 50px;
+}
+.atributos {
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+.fuerza,
+.destreza,
+.resistencia,
+.carisma,
+.manipulacion,
+.compostura {
+  /* border-right: 1px solid black; */
+  margin-right: 5px;
+}
+
+.fuerza,
+.destreza,
+.resistencia,
+.carisma,
+.manipulacion,
+.compostura,
+.inteligencia,
+.astucia,
+.resolucion {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.name,
+.cronica,
+.sire,
+.concept,
+.ambicion,
+.deseo,
+.depredador,
+.clan,
+.generation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.name-input,
+.cronica-input,
+.sire-input,
+.concept-input,
+.ambicion-input,
+.deseo-input,
+.depredador-input,
+.clan-input,
+.generation-input {
+  height: 20px;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+.atributos-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.atributos-container .fisicos {
+  width: 32%;
+  text-align: center;
+}
+.atributos-container .sociales {
+  width: 32%;
+  text-align: center;
+}
+.atributos-container .mentales {
+  width: 32%;
+  text-align: center;
+}
+
+.atributos-container .fisicos .fisicos-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.atributos-container .fisicos .fisicos-container section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+.atributos-container
+  .fisicos
+  .fisicos-container
+  .fuerza-container
+  .fuerza-title,
+.fuerza-attr {
+  width: 50%;
+}
+.atributos-container .fisicos .fisicos-container .fuerza-title,
+.fuerza-attr,
+.destreza-title,
+.destreza-attr,
+.resistencia-title,
+.resistencia-attr {
+  width: 50%;
+}
