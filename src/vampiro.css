@@ -10,23 +10,33 @@
 
 .page-general {
   display: grid;
+
   grid-template-columns: minmax(auto, 1024px);
   justify-content: center;
   align-content: center;
 }
 
 .concept-container {
-  display: grid;
-  border: 1px solid black;
-  padding-left: 2px;
+  display: inline-grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 50px 50px 50px;
-
-  align-items: center;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+}
+.concept-container > div {
+  padding-left: 15px;
+  text-align: center;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+}
+.concept-container > div > input {
+  position: relative;
+  width: 100%;
+  border: none;
 }
 
 .atributos-container {
   display: grid;
+
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 50px 50px 50px;
 }
@@ -91,44 +101,25 @@
   flex-wrap: wrap;
 }
 
-.atributos-container .fisicos {
-  width: 32%;
-  text-align: center;
-}
-.atributos-container .sociales {
-  width: 32%;
-  text-align: center;
-}
-.atributos-container .mentales {
+.atributos-container > div {
   width: 32%;
   text-align: center;
 }
 
-.atributos-container .fisicos .fisicos-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: column;
-}
-.atributos-container .fisicos .fisicos-container section {
+.atributos-container section {
   display: flex;
   align-items: center;
   justify-content: space-around;
   width: 100%;
+  border-right: solid 1px;
 }
-.atributos-container
-  .fisicos
-  .fisicos-container
-  .fuerza-container
-  .fuerza-title,
-.fuerza-attr {
+.atributos-container section h3,
+.atributos-container section div {
   width: 50%;
 }
-.atributos-container .fisicos .fisicos-container .fuerza-title,
-.fuerza-attr,
-.destreza-title,
-.destreza-attr,
-.resistencia-title,
-.resistencia-attr {
-  width: 50%;
+
+.life-points {
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
