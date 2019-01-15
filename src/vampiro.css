@@ -8,6 +8,16 @@ html {
   top: 0;
   left: calc(50% - 153px);
 }
+.round {
+  position: relative;
+}
+.round label {
+  border-radius: 50%;
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  top: 0;
+}
 .container-hero {
   width: 1024px;
 
@@ -220,5 +230,12 @@ html {
   width: 72%;
   border-bottom: dotted 1px;
 }
-.link-page1 {
+.link-page2 {
+  position: fixed;
+  top: 50%;
+  border: 1px solid;
+  border-radius: 20%;
+  background: white;
+  text-decoration: none;
+  color: black;
 }

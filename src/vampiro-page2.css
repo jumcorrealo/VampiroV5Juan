@@ -2,6 +2,12 @@ body,
 html {
   background: rgb(251, 245, 237);
 }
+.vampiro-mascarada {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: calc(35% - 153px);
+}
 .general-container {
   width: 1024px;
 
@@ -21,9 +27,14 @@ html {
 }
 
 .first-part div {
-  width: 300px;
+  width: 100%;
   height: 300px;
   border: 1px solid;
+  justify-content: center;
+  margin: 0;
+}
+.first-part section {
+  width: 33%;
 }
 
 .first-part h2 {
@@ -32,16 +43,17 @@ html {
 
 .third-part1 section {
   border: 1px solid;
+  height: 2.5em;
 }
 .third-part1 {
-  width: 45%;
-  margin-right: 20px;
+  width: 50%;
+  margin-right: 45px;
 }
 
 .third2-1 {
   display: inline-grid;
-  grid-template-columns: repeat(2, 200px);
-  grid-template-rows: repeat(3, 50px);
+  grid-template-columns: repeat(2, 15em);
+  grid-template-rows: repeat(3, 5em);
   border-bottom: 1px solid black;
   border-left: 1px solid black;
 }
@@ -52,9 +64,10 @@ html {
   border-right: 1px solid black;
   width: 100%;
 }
-.third2-1 div input[type="text"] {
+.third2-1 div div {
   background: rgb(251, 245, 237);
   width: 90%;
+  height: 70%;
   margin-left: 5px;
   border: transparent;
 }
@@ -67,11 +80,19 @@ html {
   display: flex;
   justify-content: center;
 }
+.third-part2 {
+  width: 50%;
+}
 .note {
-  height: 35%;
+  display: flex;
+  height: 42%;
   border: 1px solid;
   margin-top: 10px;
   padding-left: 5px;
+}
+.note div {
+  width: 100%;
+  height: 100%;
 }
 .third-part1 > div:nth-child(1) {
   text-align: center;
@@ -95,8 +116,9 @@ html {
 .third-part2 h2 {
   font-size: 1.4em;
 }
-.third2-2 div {
+.third2-2 > div {
   border: 1px solid;
+  display: flex;
 }
 
 .third2-2 h4 {
@@ -106,5 +128,54 @@ html {
 .third2-2 > div:nth-child(2),
 .third2-2 > div:nth-child(3),
 .third2-2 > div:nth-child(4) {
-  height: 1.6em;
+  height: 2em;
+}
+.third2-2 > div:nth-child(5),
+.third2-2 > div:nth-child(6) {
+  height: 4em;
+}
+
+.third2-2 > div:nth-child(7) {
+  height: 16em;
+}
+.third2-2 {
+  margin-bottom: 15px;
+}
+.third2-2 > div:nth-child(1) div,
+.third2-2 > div:nth-child(2) div,
+.third2-2 > div:nth-child(3) div,
+.third2-2 > div:nth-child(4) div {
+  width: 50%;
+}
+.third2-2 > div:nth-child(5) div,
+.third2-2 > div:nth-child(6) div {
+  width: 90%;
+}
+.third2-2 > div:nth-child(7) div {
+  width: 100%;
+}
+h2 {
+  color: rgb(183, 122, 124);
+}
+.total div,
+.spent div {
+  width: 50%;
+  height: 100%;
+}
+.total,
+.spent {
+  display: flex;
+  align-items: center;
+}
+.link-page1 {
+  position: fixed;
+  top: 50%;
+  border: 1px solid;
+  border-radius: 20%;
+  background: white;
+  text-decoration: none;
+  color: black;
+}
+.spent h2 {
+  margin-top: 5px;
 }
